@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Class-Path: primary-source-0.0.1-SNAPSHOT.jar logging-0.0.1-SNAPSHOT.jar
+Created-By: Maven Integration for Eclipse
+
