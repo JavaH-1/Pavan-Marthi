@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar-container"></div>
+    <div class="content-area">
+        <div id="main-content">
+            <h2>Welcome to the Retail Dashboard</h2>
+            <h4>Browse and select your products in the Product section to begin your journey!</h4>
+            <h4>🛒 Happy Shopping! 😊</h4>
+            
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7_drU9l6a4VnbCrch0lfuvDq3tfWnAMPVaw&s" class="card-img-top" alt="Sprite">
+                        <div class="card-body">
+                            <h5 class="card-title">Sprite</h5>
+                            <p><strong>Price:</strong> ₹40.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(1, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTte0xIh8Am6X_no0zVykL2SzOYJHxBfYresA&s" class="card-img-top" alt="Toor Dal">
+                        <div class="card-body">
+                            <h5 class="card-title">Toor Dal</h5>
+                            <p><strong>Price:</strong> ₹65.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(2, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5bxlCMF4aB0VT9YDqAvtCuyAzDgvY0meClA&s" class="card-img-top" alt="Tata Salt">
+                        <div class="card-body">
+                            <h5 class="card-title">Tata Salt</h5>
+                            <p><strong>Price:</strong> ₹40.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(3, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHu7RzvJzjeRrPSx-CpLAIfqxR7PEaedONA&s" class="card-img-top" alt="Lux Soap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lux International Soap</h5>
+                            <p><strong>Price:</strong> ₹75.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(4, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDbkHmoTV6royRX2EK2lm6yycEz5mPqzF_Q&s" class="card-img-top" alt="CloseUp Toothpaste">
+                        <div class="card-body">
+                            <h5 class="card-title">CloseUp Toothpaste</h5>
+                            <p><strong>Price:</strong> ₹30.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(5, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGDzqK3qIxbmFRjyORMPDeq63CgWTVrFTfcQ&s" class="card-img-top" alt="Oil">
+                        <div class="card-body">
+                            <h5 class="card-title">Oil</h5>
+                            <p><strong>Price:</strong> ₹156.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(6, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 (Fixed Image URL) -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNP5MYEL8DtUUcul_S08CtPZ15GyCzerTQ4g&s" class="card-img-top" alt="Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Ice Cream</h5>
+                            <p><strong>Price:</strong> ₹50.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(7, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Z-zpAx7AhKL-IlF8GeDivEv4xrGO0n__Lw&s" class="card-img-top" alt="Milk">
+                        <div class="card-body">
+                            <h5 class="card-title">Milk (1 Liter)</h5>
+                            <p><strong>Price:</strong> ₹80.00</p>
+                            <button class="btn btn-primary" onclick="addToCart(8, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of row -->
+        </div> <!-- End of main-content -->
+    </div> <!-- End of content-area -->
+
+    <!-- JavaScript -->
+    <script>
+        function loadSidebar() {
+            fetch('sidebar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('sidebar-container').innerHTML = html;
+                })
+                .catch(error => console.error('Error loading sidebar:', error));
+        }
+
+        document.addEventListener("DOMContentLoaded", loadSidebar); // Ensure sidebar loads after DOM is ready
+    </script>
+</body>
+</html>
